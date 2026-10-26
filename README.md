@@ -1,7 +1,5 @@
 # DEDO
 
-<img src="./icon.png" width="75%">
-
 **De**von's personal To-**Do** List mac app (pronounced "dee doo")
 
 A keyboard-only macOS to-do list that is a front end to one markdown file. It is vim-friendly, coding-agent-friendly, and most importantly, me-friendly.
