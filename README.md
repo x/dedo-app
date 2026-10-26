@@ -47,11 +47,9 @@ All state for DEDO lives in a single edit-friendly `.md` file.
 # Work
 
 ## Today
-
 - [ ] prep for meeting
 
 ## Next Week
-
 - [ ] loose item
 - [ ] backlog item
 
