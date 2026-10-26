@@ -1,6 +1,6 @@
-# DEDO
-
 <img src="./icon.png" width="20%" style="margin=0">
+
+# DEDO
 
 **De**von's To-**Do** List App (pronounced "dee doo")
 
