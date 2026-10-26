@@ -1,31 +1,33 @@
 # DEDO
 
-**De**von's personal To-**Do** List mac app (pronounced "dee doo")
+**De**von's To-**Do** List App (pronounced "dee doo")
 
-A keyboard-only macOS to-do list that is a front end to one markdown file. It is vim-friendly, coding-agent-friendly, and most importantly, me-friendly.
+A keyboard-only macOS to-do list that works as a friendly app front-end to a simple TODO list in a markdown file. It is vim-friendly, coding-agent-friendly, and most importantly, me-friendly.
 
 *This codebase is 100% vibecoded slop.*
 
 ![screenshot](./screenshot.png)
 
-## Toml Settings
+## Settings
 
-The markdown filepath is set in `~/.config/dedo/config.toml`. Default: `iCloud Drive/DEDO.md`.
+Settings live in `~/.config/dedo/config.toml`.
 
 | Setting | Behavior | Default |
 |---------|----------|---------|
-| `file`  | File path of `DEDO.md`. `~` works. | `iCloud Drive/DEDO.md` |
+| `file`  | File path of `DEDO.md`. `~` works. | `~/Library/Mobile Documents/com~apple~CloudDocs/DEDO.md` |
 | `git`   | `"sync"`: commit the list file (only that file), pull, and push while the app runs. | off |
 | `git_every` | How often to sync (minimum 30s).  | `"5m"` |
 | `new_items` | Where new items go: `top` or `bottom`. | `"top"` |
 | `appearance` | `system`, `light`, or `dark`. | `"system"` |
 | `[dark]`, `[light]` | `"#rrggbb"` for `background`, `sidebar`, `text`, `muted`, `selection`, `accent`, `done`, `link`, `error`. | Dracula, Alucard |
 
+### iCloud Sync
+
+The default sync path is the iCloud Drive folder (`DEDO.md` ) and iCloud handles all the syncing.
+
 ### Git Sync
 
-If the file is in a git repo, add `git = "sync"`. While the app runs, the repo is pulled, merged, committed, and pushed in the background.
-
-By default, the list syncs every 5 minutes, whenever the app comes into focus, or out of focus after changes, and on quit.
+If the file is in a git repo, add `git = "sync"`. While the app runs, the repo is pulled, merged, committed, and pushed in the background. By default, the list syncs every 5 minutes, whenever the app comes into focus, or out of focus after changes, and on quit.
 
 ## Example `DEDO.md`
 
@@ -35,12 +37,27 @@ All state for DEDO lives in a single edit-friendly `.md` file.
 # Inbox
 
 ## 2026-10-25
-- [ ] Read these and compare
+- [ ] read these and compare
   - https://first.link
   - https://second.link
 
+## 2026-10-24
+- [ ] review that PR
+
 # Work
+
+## Today
+
+- [ ] prep for meeting
+
+## Next Week
+
 - [ ] loose item
+- [ ] backlog item
+
+# DEDO App Dev
+- [ ] over-engineer the built-in vim editor
+- [ ] add a screenshot
 
 ## Today
 - [x] finished thing @done(2026-10-25 14:32)
